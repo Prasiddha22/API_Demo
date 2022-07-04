@@ -1,5 +1,6 @@
 <?php
 
+header('Access-Control-Allow-Origin: *');
 include 'connection.php';
 
 if (isset($_POST['id']) && isset($_POST['name']) && isset($_POST['address']) && isset($_POST['contact'])) {
