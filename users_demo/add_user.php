@@ -17,6 +17,7 @@ if (isset($_POST['name']) && isset($_POST['address']) && isset($_POST['contact']
     // execute the query
     $result = mysqli_query($connect, $query);
 
+    // check if the query is executed successfully
     if ($result) {
         $response = ['success' => true, 'message' => 'User added successfully'];
     } else {
