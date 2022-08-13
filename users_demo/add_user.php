@@ -22,7 +22,7 @@ if (isset($_POST['name']) && isset($_POST['address']) && isset($_POST['contact']
         // if the query is executed successfully, return the message
         $response = ['success' => true, 'message' => 'User added successfully'];
     } else {
-
+        // if the query is not executed successfully, return the message
         $response = ['success' => false, 'message' => 'Somethig went wrong'];
     }
 } else {
