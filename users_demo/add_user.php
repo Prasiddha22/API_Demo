@@ -1,4 +1,5 @@
 <?php
+// allowing the cross origin header
 header('Access-Control-Allow-Origin: *');
 include 'connection.php';
 
@@ -8,6 +9,7 @@ if (isset($_POST['name']) && isset($_POST['address']) && isset($_POST['contact']
     $address = $_POST['address'];
     $contact = $_POST['contact'];
 
+    // query to insert user
     $query = "INSERT into users (name, address, contact) values('$name','$address','$contact')";
     $result = mysqli_query($connect, $query);
 
