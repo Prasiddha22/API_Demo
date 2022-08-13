@@ -26,6 +26,7 @@ if (isset($_POST['name']) && isset($_POST['address']) && isset($_POST['contact']
         $response = ['success' => false, 'message' => 'Somethig went wrong'];
     }
 } else {
+    // if the required params are not received, return the message
     $response = ['success' => false, 'message' => 'Please fill all the fields'];
 }
 echo json_encode($response);
