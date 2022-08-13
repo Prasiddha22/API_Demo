@@ -13,6 +13,8 @@ if (isset($_POST['name']) && isset($_POST['address']) && isset($_POST['contact']
 
     // query to insert user
     $query = "INSERT into users (name, address, contact) values('$name','$address','$contact')";
+
+    // execute the query
     $result = mysqli_query($connect, $query);
 
     if ($result) {
