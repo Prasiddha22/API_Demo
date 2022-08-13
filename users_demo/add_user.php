@@ -3,6 +3,7 @@
 header('Access-Control-Allow-Origin: *');
 include 'connection.php';
 
+// check if all the required params are received
 if (isset($_POST['name']) && isset($_POST['address']) && isset($_POST['contact'])) {
 
     $name = $_POST['name'];
